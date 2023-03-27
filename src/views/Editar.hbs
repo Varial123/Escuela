@@ -1,0 +1,19 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h4>Editar Asignaturas</h4>
+  <h1>Asignaturas</h1>
+<form action="/update1/{{asignatura._id}}" method="POST">
+<div>
+    <label for="nombre">Modificar Nombre:</label>
+    <input type="text" name="nombre" placeholder="nombre" value="{{asignatura.nombre}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="creditos">Modificar Creditos:</label>
+    <input type="text" name="creditos" placeholder="creditos" value="{{asignatura.creditos}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="horas">Modificar Horas:</label>
+    <input type="text" name="horas" placeholder="horas" value="{{asignatura.horas}}" class="form-control bg-dark text-white">
+</div>
+<button  class="btn btn-success btn-sm mt-2">Actualizar</button>
+</form>
+</div>

@@ -1,0 +1,43 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h4>Editar Profesor</h4>
+  <h1>Profesor</h1>
+<form action="/update2/{{profesor._id}}" method="POST">
+<div>
+    <label for="rfc">Modifica RFC:</label>
+    <input type="text" name="rfc" placeholder="rfc" value="{{profesor.rfc}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="nombre">Modifica Nombre Alumno:</label>
+    <input type="text" name="nombre" placeholder="Name" value="{{profesor.nombre}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="paterno">Modifica Apellido Paterno:</label>
+    <input type="text" name="paterno" placeholder="paterno" value="{{profesor.paterno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="materno">Modifica Apellido Materno:</label>
+    <input type="text" name="materno" placeholder="materno" value="{{profesor.materno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="fechaNac">Modifica FechaNacimiento</label>
+    <input type="text" name="fechaNac" placeholder="fechaNac" value="{{profesor.fechaNac}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="direccion">Modifica Direccion</label>
+    <input type="text" name="direccion" placeholder="direccion" value="{{profesor.direccion}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="telefono">Modifica Celular:</label>
+    <input type="text" name="telefono" placeholder="telefono" value="{{profesor.telefono}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="profecion">Modifica Dirección:</label>
+    <input type="text" name="profecion" placeholder="profecion" value="{{profesor.profecion}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="numeroEmp">Modifica Numero Empleado</label>
+    <input type="text" name="numeroEmp" placeholder="numeroEmp" value="{{profesor.numeroEmp}}" class="form-control bg-dark text-white">
+</div>
+<button class="btn btn-success btn-sm mt-2">Editar</button>
+</form>
+</div>

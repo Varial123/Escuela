@@ -1,0 +1,39 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+<h4>Editar Alumno</h4>
+  <h1>Alumnos</h1>
+<form action="/update/{{alumno._id}}" method="POST">
+<div>
+    <label for="nombre">Modifica Nombre Alumno:</label>
+    <input type="text" name="nombre" placeholder="Name" value="{{alumno.nombre}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="paterno">Modifica Apellido Paterno:</label>
+    <input type="text" name="paterno" placeholder="paterno" value="{{alumno.paterno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="materno">Modifica Apellido Materno:</label>
+    <input type="text" name="materno" placeholder="materno" value="{{alumno.materno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="fechaNac">Modifica FechaNacimiento</label>
+    <input type="text" name="fechaNac" placeholder="fechaNac" value="{{alumno.fechaNac}}" class="form-control bg-dark text-white">
+</div>
+<div>
+     <label for="sexo">seleciona sexo:</label>
+         <select name="sexo"id="sexo" value="{{alumno.sexo}}" class="form-control bg-dark text-white">
+        <option value=""></option>
+         <option value="H">Hombre</option>
+         <option value="M">Mujer</option>
+      </select>
+</div>
+<div>
+    <label for="telefono">Modifica Celular:</label>
+    <input type="text" name="telefono" placeholder="telefono" value="{{alumno.telefono}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="direccion">Modifica Dirección:</label>
+    <input type="text" name="direccion" placeholder="direccion" value="{{alumno.direccion}}" class="form-control bg-dark text-white">
+</div>
+<button class="btn btn-success btn-sm mt-2">Editar</button>
+</form>
+</div>

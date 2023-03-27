@@ -1,0 +1,2 @@
+npm i dotenv //sirve para el uso de variables de entorno
+npm i --save-dev @babel/plugin-transform-runtime #transforma el codigo

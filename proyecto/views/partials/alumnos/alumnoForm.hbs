@@ -1,0 +1,40 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h4>Agregar Alumno</h4>
+  <h1>Alumnos</h1>
+<form action="/alumnos/agregar" method="POST">
+    <div>
+      <label for="nombre">Escribe tu nombre(s):</label>
+      <input type="text" name="nombre" placeholder="Nombre" id="nombre"
+      class="form-control bg-dark text-white"/>
+    </div>
+    <div>
+      <label for="paterno">Escribe tu apellido paterno:</label>
+      <input type="text" name="paterno" placeholder="Apellido Paterno" id="paterno"class="form-control bg-dark text-white"/>
+    </div>
+    <div>
+      <label for="materno">Escribe tu apellido materno:</label>
+      <input type="text" name="materno" placeholder="Apellido Materno" id="materno" class="form-control bg-dark text-white"/>
+    </div>
+    <div>
+      <label for="fechaNac">Selecciona Fecha:</label>
+      <input type="date" name="fechaNac" placeholder="12/01/0000" id="fechaNac"/>
+    </div>
+    <div>
+      <label for="sexo">seleciona sexo:</label>
+         <select name="sexo"id="sexo" class="form-control bg-dark text-white">
+        <option value=""></option>
+         <option value="H">Hombre</option>
+         <option value="M">Mujer</option>
+      </select>
+    </div>
+    <div>
+      <label for="telefono">Escribe tu numero telefonico:</label>
+      <input type="number" name="telefono" placeholder="celular" id="telefono" class="form-control bg-dark text-white"/>
+    </div>
+    <div>
+      <label for="direccion">Direccion:</label>
+      <input type="text" name="direccion" placeholder="direccion" id="direccion" class="form-control bg-dark text-white"/>
+    </div>
+    <button class="btn btn-success btn-sm mt-2">Agregar</button> 
+</form>
+</div>
